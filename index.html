@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>хочу кушац</title>
+
+</head>
+<body>
+  <div class="botle_img">
+    <img src="img/botle.png" class="botle_img"alt="">
+  </div>
+<div class="container_content">
+<div class="container top">
+    <div class="box">
+        <div class="button_of_record">
+            <div class="red_circle"></div>
+            <div class="text_record">
+                Запись
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="button_of_progress">
+            <div class="text_of_paranormal">
+                Паранормальные явления:
+                <div class="scroll_progress">
+                  <span class="scroll_progress__text">0%</span>
+                </div>
+                <script type="text/javascript">
+                var scrollProgress = document.querySelector('.scroll_progress__text');
+            window.onscroll = function() {
+            var offset = window.pageYOffset || document.documentElement.scrollTop,
+                windowHeight = document.documentElement.scrollHeight-document.documentElement.clientHeight,
+                progress = Math.floor(offset/windowHeight * 100);
+            scrollProgress.innerHTML = progress + '%'
+            }
+            </script>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container_center text_center">
+        <p>для начала записи нажимте кнопку <br></p>
+    </div>
+<div class="container2 bottom">
+    <div class="box_bottom">
+        <div class="time_animation">
+          <div class="time_animation_2">
+            <div class="container_for_stopwatch_static position_of">
+            <p class="text">00:00:00:00</p>
+            </div>
+          </div>
+          <div class="container_for_stopwatch">
+          <p id="random_number"></p>
+          <p>:</p>
+            <p id="random_number2"></p>
+            <p>:</p>
+            <p id="random_number3"></p>
+            <p>:</p>
+            <p id="random_number4"></p>
+          </div>
+        </div>
+    </div>
+    <div class="circle_border">
+       <div class="button_photo">
+           <div class="camera"></div>
+       </div>
+    </div>
+           <div class="box_bottom2">
+             <div class="button_of_object_found">
+                <div class="text_found">
+                 Найден объект:
+                </div>
+                <div class="button_of_information">
+                  <p class="textok">ложка бла бла</p>
+                  <div class="triangle">
+                    <div class="object"></div>
+                  </div>
+                </div>
+             </div>
+           </div>
+    </div>
+</div>
+<div id="animation">Time for animation</div>
+<div class="test"></div>
+<div class="fixed hidden">
+</div>
+<div id="animation">Time for animation</div>
+<div class="test"></div>
+<div class="fixed hidden"></div>
+<script type="text/javascript" defer>
+        var $win = $(window),
+        $fixed = $(".fixed"),
+        limit = 3000;
+        function tgl (state) {
+        $fixed.toggleClass("hidden", state);
+        $(".textok").show();
+        }
+        $win.on("scroll", function () {
+        var top = $win.scrollTop();
+        if (top < limit) {
+            $(".fixed").css('display', 'fixed');
+        }
+         else {
+            tgl(false);
+        }
+        });
+
+</script>
+</body>
+</html>

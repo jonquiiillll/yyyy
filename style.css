@@ -1,0 +1,506 @@
+body {
+    background-color: black;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+@media screen and (max-width:768px) {
+  .fixed {
+    top: -3px !important;
+    left: 250px !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .time_animation {
+    display: none !important;
+  }
+
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+body {
+    height: 10000px;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.text {
+    margin-top: -20px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.line_first {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.line_second {
+    width: 3px;
+    height: 98%;
+    background-color: white;
+}
+.line_first_right {
+    width: 3px;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+.line_second_right {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.scroll_progress {
+    justify-content: flex-end;
+    display: flex;
+    font-size: 40px;
+    right: 20px;
+    font-family: Roboto Mono;
+
+}
+.scroll_progress__text {
+    font-size: 25px;
+    color: #fff;
+    width: 100%;
+    line-height: 50px;
+    font-weight: 300;
+}
+.some_content {
+    border: 1px dashed #333;
+    height: 400px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+.container_center {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.box {
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.hide {
+    display: none;
+}
+.box2 {
+    border-top: 3px solid white;
+    border-right: 3px solid white ;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    display: flex;
+    justify-content: flex-end;
+    /*background-color: deeppink;*/
+}
+.box_bottom {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    display: flex;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.box_bottom2 {
+    border-bottom: 3px solid white;
+    display: flex;
+    border-right: 3px solid white;
+    justify-content: flex-end;
+    margin: 35px;
+    align-items: flex-end;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.button_of_information {
+  width: 100%;
+  height: 43px;
+  background: #282828;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.textok {
+  display: none;
+  font-family: Roboto Mono;
+  margin: 10px;
+}
+.container_content {
+    position: fixed;
+    height: 100vh;
+   flex-wrap: wrap;
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+}
+.line_bottom_left_first {
+    width: 3px;
+    height: 100%;
+    background-color: white;
+}
+.line_bottom_left_second {
+    align-self: flex-end;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.line_bottom_right_first {
+    width: 3px;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+.line {
+    height: 100%;
+    width: 3px;
+    background-color: white;
+    right: 0;
+    opacity: 0;
+    display: flex;
+}
+.line2 {
+    height: 100%;
+    width: 3px;
+    background-color: white;
+    right: 0;
+    display: flex;
+
+}
+.line_bottom {
+    position: absolute;
+    width: auto;
+    height: 3px;
+    background-color: white;
+    align-self: flex-end;
+}
+.line_bottom_right_second {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: flex;
+    align-self: flex-end;
+}
+.button_of_progress {
+    width: 80%;
+    height: 80%;
+    margin-right: 30px;
+    margin-top: 15px;
+    position:  relative;
+    display: none;
+    align-content: flex-end;
+    /*background-color: white;*/
+}
+.red_circle {
+    display: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background: #E10000;
+    transition: dark_red_circle 5s ease;
+    animation: dark_red_circle 3s linear infinite;
+}
+
+
+@keyframes dark_red_circle {
+   0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.big_frame {
+    width: 98.5%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid white;
+    /*background-color: #380000;*/
+}
+.button_of_object_found {
+    width: auto;
+
+    /*background-color: white;*/
+    position: absolute;
+    margin: 13px;
+    position: relative;
+    display: flow-root;
+    align-content: flex-end;
+    align-content: space-between;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  display: none;
+  margin-left: 10px;
+  border-style: solid;
+  border-width: 5.5px 9.5px 5.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+.time_animation {
+    width: 80%;
+    height: 90%;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.time_animation_2 {
+    width: 80%;
+    height: 90%;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.position_of {
+  align-items: flex-end;
+}
+.container_for_stopwatch_static {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: Roboto Mono;
+  align-items: flex-end;
+}
+.container_for_stopwatch {
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-family: Roboto Mono;
+  align-items: flex-end;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+p {
+  color: white;
+  font-size: 30px
+}
+#random_number {
+  color: white;
+  font-size: 30px
+}
+#random_number2 {
+  color: white;
+  font-size: 30px
+}
+#random_number3 {
+  color: white;
+  font-size: 30px
+}
+.button_of_record {
+    width: auto;
+    margin: 20px;
+    position: absolute;
+    height: 50px;
+    display: flex;
+    float: left;
+}
+.text_record {
+    display: none;
+    padding-left: 25px;
+    width: 232px;
+    height: 38px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.text_center {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.text_found {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.main_part {
+  margin: 0 auto;
+}
+.circle_border {
+    display: flex;
+    align-self: flex-end;
+    margin: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 60px;
+    border: 10px solid white;
+}
+.button_photo {
+    border-radius: 40px;
+    width: 59px;
+    margin: 0 auto;
+    height: 59px;
+    background-color: white;
+    display: flex;
+    align-self: center;
+    object-fit: cover;
+}
+.hidden {
+    opacity: 0;
+    transition: all .5s  linear;
+}
+.camera {
+    margin: 0 auto;
+    align-self: center;
+}
+.text_of_paranormal {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Roboto Mono;
+    line-height: 33px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.botle_img {
+  position: fixed;
+  width: 35%;
+  object-fit: cover;
+  transform: rotate(-20deg);
+  top: 20%;
+  left: 50%;
+  display: none;
+}
+.test {
+    width: 100px;
+    height: 2000px;
+}
+.fixed {
+    position: fixed;
+    top: -180px;
+    left: 800px;
+    width: 70%;
+    height: 70%;
+    transform: rotate(-30deg);
+    object-fit: cover;
+    background-image: url('img/botle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: botle_shadow 3s linear;
+    animation-fill-mode: both;
+}
+@keyframes botle_shadow {
+   0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+.fixed.hidden {
+    display: none;
+}
+.test2{
+    width: 100px;
+    height: 2000px;
+}
+.fixed2 {
+    position: fixed;
+    top: -180px;
+    left: 800px;
+    width: 70%;
+    height: 70%;
+    transform: rotate(-30deg);
+    object-fit: cover;
+    background-image: url('img/spun.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: botle_shadow 3s linear;
+    animation-fill-mode: both;
+}
+@keyframes botle_shadow {
+   0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+.fixed2.hidden2 {
+    display: none;
+}
+#animation2 {
+    position: fixed;
+    display: none;
+}
+.first {
+    height: 4000px;
+}
+.second {
+    border: 1px solid white;
+    height: 100px;
+    display: fixed;
+}
+#animation {
+    position: fixed;
+    display: none;
+}
